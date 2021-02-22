@@ -1,0 +1,97 @@
+/*!
+<----------------------------------------
+  Theme Name: Ooharagumi
+  Theme URI: http://ooharagumi.weviva.jp/
+  Author: infoinlet.net.
+  Author URI: http://ooharagumi.weviva.jp/
+  Description: Ooharagumi is a Creative HTML5 Template for Saas, Startup & any ytpe of confarence.
+  Version: 1.0.0
+  Tags: app, Ooharagumi landing page, app landing page, app showcase template, application services, gradient color, landing, marketing, responsive template, seo, software, Software Services, startup, tech, web application landing page.
+---------------------------------------->
+*/
+/*
+>>> TABLE OF CONTENTS:
+<----------------------------------------------------------------
+  01. Default CSS
+  02. Global css
+  03. Header
+  04. sidebar menu
+  05. About
+  07. Roadmap
+  08. News
+  09. Team
+  10. Contact
+---------------------------------------------------------------->
+
+
+/*--------------------------------------------------------------
+Typography
+--------------------------------------------------------------*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+body {
+  font-family: 'Sunflower', sans-serif;
+  font-weight: 300;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  background-color: #f9f9f9;
+}
+body.overflow{
+overflow: hidden;
+}
+
+.btn-footer{
+color: white;
+font-weight: bold;
+font-size: 17px;
+background-image: linear-gradient(135deg, $theme-light2 , $theme-light,);
+height: 50px;
+padding: 0 40px;
+border-radius: 25px;
+border-top-left-radius: 25px !important;
+border-bottom-left-radius: 25px !important;
+}
+.footer-input{
+border-radius: 25px;
+border-top-right-radius: 25px !important;
+border-bottom-right-radius: 25px !important;
+padding: 12px 121px 12px 30px;
+border: 1px solid transparent;
+color: $theme-dark2;
+&::placeholder{
+  color: $theme-light2;
+}
+&:focus{
+  box-shadow: none;
+  
+}
+}
+
+
+
+@keyframes animate-1 {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+@keyframes animate-2 {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+@keyframes animate-3 {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+//? all social media
+
+
+
+
+
+
+
