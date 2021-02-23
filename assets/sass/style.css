@@ -227,22 +227,22 @@ body.overflow {
 
 @-webkit-keyframes data-animate-4 {
   0% {
-    left: 39px;
+    left: 38.313px;
     bottom: 4px;
   }
   100% {
-    left: 39px;
+    left: 38.5px;
     bottom: 8px;
   }
 }
 
 @keyframes data-animate-4 {
   0% {
-    left: 39px;
+    left: 38.313px;
     bottom: 4px;
   }
   100% {
-    left: 39px;
+    left: 38.5px;
     bottom: 8px;
   }
 }
@@ -303,6 +303,7 @@ header .menu-area {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 0 20px;
 }
 
 header .menu-area .menu-logo {
@@ -415,7 +416,8 @@ header .menu-area .main-menu .menus .list-menu .drop-list:nth-child(1):hover::af
 
 header .menu-area .main-menu .menus .list-menu .drop-list:nth-child(1):hover .down-menu1 {
   top: 30px;
-  left: 0;
+  left: -285px !important;
+  width: 656px;
   bottom: 20px;
   height: auto;
   -webkit-transform: scaley(1);
@@ -429,15 +431,108 @@ header .menu-area .main-menu .menus .list-menu .drop-list:nth-child(1):hover .do
   color: white;
 }
 
-header .menu-area .main-menu .menus .list-menu .drop-list:nth-child(1):hover .down-menu1 li {
-  height: 50px;
+@media (min-width: 992px) {
+  header .menu-area .main-menu .menus .list-menu .drop-list:nth-child(1):hover .down-menu1::after {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    top: -7px;
+    left: 50%;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
 }
 
-header .menu-area .main-menu .menus .list-menu .drop-list:nth-child(1):hover .down-menu1 li a {
-  -webkit-box-shadow: -1px 113px 60px 2px transparent;
-          box-shadow: -1px 113px 60px 2px transparent;
-  color: #0A2465;
-  color: white;
+header .menu-area .main-menu .menus .list-menu .drop-list:nth-child(1):hover .down-menu1 .drop-aling {
+  display: block;
+}
+
+@media (min-width: 992px) {
+  header .menu-area .main-menu .menus .list-menu .drop-list:nth-child(1):hover .down-menu1 .drop-aling {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .menu-area .main-menu .menus .list-menu .drop-list:nth-child(1):hover .down-menu1 .drop-aling ul.design-drop {
+    padding: 10px;
+    color: #000B4B;
+    cursor: auto;
+    width: calc(656px / 3);
+    font-weight: 500;
+  }
+  header .menu-area .main-menu .menus .list-menu .drop-list:nth-child(1):hover .down-menu1 .drop-aling ul.design-drop li {
+    min-height: 66px;
+    padding: 5px;
+    font-weight: 300;
+    line-height: 20px;
+    font-size: 17px;
+  }
+  header .menu-area .main-menu .menus .list-menu .drop-list:nth-child(1):hover .down-menu1 .drop-aling ul.design-drop li:hover {
+    background-color: #E5E7ED;
+    border-left: 3px solid #000B4B;
+  }
+  header .menu-area .main-menu .menus .list-menu .drop-list:nth-child(1):hover .down-menu1 .drop-aling ul.design-drop li a {
+    line-height: 20px;
+    font-weight: 500;
+  }
+  header .menu-area .main-menu .menus .list-menu .drop-list:nth-child(1):hover .down-menu1 .drop-aling ul.design-drop li a span {
+    font-size: 16px;
+    font-weight: 300;
+  }
+  header .menu-area .main-menu .menus .list-menu .drop-list:nth-child(1):hover .down-menu1 .drop-aling ul.appliacation-drop {
+    padding: 10px;
+    color: #000B4B;
+    cursor: auto;
+    width: calc(656px / 3);
+    font-weight: 500;
+  }
+  header .menu-area .main-menu .menus .list-menu .drop-list:nth-child(1):hover .down-menu1 .drop-aling ul.appliacation-drop li {
+    height: 130px;
+    padding: 5px;
+    font-weight: 300;
+    line-height: 20px;
+    font-size: 17px;
+  }
+  header .menu-area .main-menu .menus .list-menu .drop-list:nth-child(1):hover .down-menu1 .drop-aling ul.appliacation-drop li:hover {
+    background-color: #E5E7ED;
+    border-left: 3px solid #000B4B;
+  }
+  header .menu-area .main-menu .menus .list-menu .drop-list:nth-child(1):hover .down-menu1 .drop-aling ul.appliacation-drop li a {
+    line-height: 20px;
+    font-weight: 500;
+  }
+  header .menu-area .main-menu .menus .list-menu .drop-list:nth-child(1):hover .down-menu1 .drop-aling ul.appliacation-drop li a span {
+    font-size: 16px;
+    font-weight: 300;
+  }
+  header .menu-area .main-menu .menus .list-menu .drop-list:nth-child(1):hover .down-menu1 .drop-aling ul.groth-drop {
+    padding: 10px;
+    color: #000B4B;
+    cursor: auto;
+    width: calc(656px / 3);
+    font-weight: 500;
+  }
+  header .menu-area .main-menu .menus .list-menu .drop-list:nth-child(1):hover .down-menu1 .drop-aling ul.groth-drop li {
+    min-height: 66px;
+    padding: 5px;
+    font-weight: 300;
+    line-height: 20px;
+    font-size: 17px;
+  }
+  header .menu-area .main-menu .menus .list-menu .drop-list:nth-child(1):hover .down-menu1 .drop-aling ul.groth-drop li:hover {
+    background-color: #E5E7ED;
+    border-left: 3px solid #000B4B;
+  }
+  header .menu-area .main-menu .menus .list-menu .drop-list:nth-child(1):hover .down-menu1 .drop-aling ul.groth-drop li a {
+    line-height: 20px;
+    font-weight: 500;
+  }
+  header .menu-area .main-menu .menus .list-menu .drop-list:nth-child(1):hover .down-menu1 .drop-aling ul.groth-drop li a span {
+    font-size: 16px;
+    font-weight: 300;
+  }
 }
 
 header .menu-area .main-menu .menus .list-menu .drop-list:nth-child(2):hover::after {
@@ -503,14 +598,32 @@ header .menu-area .main-menu .menus .list-menu .drop-list .down-menu1 {
   position: relative;
   top: 0px;
   height: 0px;
+  width: 656px !important;
   -webkit-transform: scaley(0);
           transform: scaley(0);
   text-align: left;
   -webkit-transform-origin: top;
           transform-origin: top;
-  -webkit-transition: all 0.3 ease-in-out;
-  transition: all 0.3 ease-in-out;
+  -webkit-transition: height 0.3 ease-in-out;
+  transition: height 0.3 ease-in-out;
   padding: 0px 0px;
+}
+
+header .menu-area .main-menu .menus .list-menu .drop-list .down-menu1 .drop-aling {
+  display: block;
+}
+
+@media (min-width: 992px) {
+  header .menu-area .main-menu .menus .list-menu .drop-list .down-menu1 .drop-aling {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .menu-area .main-menu .menus .list-menu .drop-list .down-menu1 .drop-aling ul {
+    padding: 10px;
+    margin: 0;
+    width: calc(400px / 3);
+  }
 }
 
 header .menu-area .main-menu .menus .list-menu .drop-list .down-menu1 li {
@@ -603,7 +716,7 @@ header .menu-area .main-menu .menus .list-menu .normal-list:nth-last-child(1) a:
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 12px 10px;
+    padding: 12px 20px;
     position: relative;
     color: #000B4B;
     list-style: none;
@@ -725,7 +838,7 @@ header .menu-area .main-menu .menus .list-menu .normal-list:nth-last-child(1) a:
   }
   header .menu-area .main-menu .menus .list-menu .normal-list {
     list-style: none;
-    padding: 30px 15px;
+    padding: 30px 20px;
   }
   header .menu-area .main-menu .menus .list-menu .normal-list a {
     color: #0A2465;
@@ -1338,6 +1451,16 @@ header .menu-area .main-menu .menus .list-menu .normal-list:nth-last-child(1) a:
   color: white;
 }
 
+.choose-area {
+  padding: 0 0px;
+}
+
+@media (min-width: 576px) {
+  .choose-area {
+    padding: 0 25px;
+  }
+}
+
 .choose-area .section-header {
   text-align: center;
   color: #3DADF2;
@@ -1489,7 +1612,13 @@ header .menu-area .main-menu .menus .list-menu .normal-list:nth-last-child(1) a:
 }
 
 .experience-area .card-area {
-  padding: 40px 0;
+  padding: 40px 0x;
+}
+
+@media (min-width: 576px) {
+  .experience-area .card-area {
+    padding: 40px 50px;
+  }
 }
 
 .experience-area .card-area .card-box {
@@ -1583,6 +1712,13 @@ header .menu-area .main-menu .menus .list-menu .normal-list:nth-last-child(1) a:
   background-color: #000B4B;
   text-align: center;
   border-radius: 15px;
+  margin: 0 0;
+}
+
+@media (min-width: 576px) {
+  .question-area .question-box {
+    margin: 0 25px;
+  }
 }
 
 .question-area .question-box .animation-area {
@@ -1961,49 +2097,59 @@ header .menu-area .main-menu .menus .list-menu .normal-list:nth-last-child(1) a:
   z-index: -1;
 }
 
-footer .footer-logo img {
+footer .footer-alignment {
+  padding: 0 0;
+}
+
+@media (min-width: 576px) {
+  footer .footer-alignment {
+    padding: 0 25px;
+  }
+}
+
+footer .footer-alignment .footer-logo img {
   margin: 10px 0;
 }
 
-footer .footer-logo-content h5 {
+footer .footer-alignment .footer-logo-content h5 {
   color: #0A2465;
   font-size: 22px;
   font-weight: bold;
   letter-spacing: 1px;
 }
 
-footer .footer-logo-content p {
+footer .footer-alignment .footer-logo-content p {
   color: #716c80;
   font-size: 17px;
 }
 
-footer .footer-form .btn-footer {
+footer .footer-alignment .footer-form .btn-footer {
   position: absolute;
   right: 0;
   z-index: 99;
 }
 
-footer .fo-link-area .link-content .cods-content {
+footer .footer-alignment .fo-link-area .link-content .cods-content {
   color: #3DADF2;
   font-weight: 400;
   padding-right: 20px;
 }
 
-footer .fo-link-area .link-content .phone-contact {
+footer .footer-alignment .fo-link-area .link-content .phone-contact {
   color: #9B9FB8;
   font-size: 18px;
   font-weight: 300;
   margin: 0;
 }
 
-footer .fo-link-area .link-content .massage-contact {
+footer .footer-alignment .fo-link-area .link-content .massage-contact {
   color: #9B9FB8;
   font-size: 18px;
   font-weight: 300;
   margin: 0 0 3px 0;
 }
 
-footer .fo-link-area .link-content .social-icons {
+footer .footer-alignment .fo-link-area .link-content .social-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2011,75 +2157,75 @@ footer .fo-link-area .link-content .social-icons {
       flex-wrap: wrap;
 }
 
-footer .fo-link-area .link-content .social-icons .so-icon1 {
+footer .footer-alignment .fo-link-area .link-content .social-icons .so-icon1 {
   background-color: #0A2465;
   padding: 15px;
 }
 
-footer .fo-link-area .link-content .social-icons .so-icon2 {
+footer .footer-alignment .fo-link-area .link-content .social-icons .so-icon2 {
   background-color: #000B4B;
   padding: 15px;
 }
 
-footer .fo-link-area .link-content .social-icons .so-icon3 {
+footer .footer-alignment .fo-link-area .link-content .social-icons .so-icon3 {
   background-color: #3290D4;
   padding: 16px 11px 6px 11px;
 }
 
-footer .fo-link-area .link-content .social-icons .so-icon4 {
+footer .footer-alignment .fo-link-area .link-content .social-icons .so-icon4 {
   background-color: #3DADF2;
   padding: 16px 11px 6px 11px;
 }
 
 @media (min-width: 769px) {
-  footer .fo-link-area .link-content .social-icons {
+  footer .footer-alignment .fo-link-area .link-content .social-icons {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
 }
 
-footer .fo-link-area .link-content .copy-right {
+footer .footer-alignment .fo-link-area .link-content .copy-right {
   padding: 15px 0 0;
   color: #3DADF2;
   font-weight: 400;
 }
 
-footer .fo-link-area .link-cetagory {
+footer .footer-alignment .fo-link-area .link-cetagory {
   font-size: 18px;
   font-weight: 400;
   color: #000B4B;
 }
 
-footer .fo-link-area .footer-link {
+footer .footer-alignment .fo-link-area .footer-link {
   margin: 0;
   padding: 0;
 }
 
-footer .fo-link-area .footer-link li {
+footer .footer-alignment .fo-link-area .footer-link li {
   list-style: none;
   height: 30px;
 }
 
-footer .fo-link-area .footer-link li span {
+footer .footer-alignment .fo-link-area .footer-link li span {
   font-size: 14px;
   color: #F2994A;
   font-weight: 400;
 }
 
-footer .fo-link-area .footer-link li a {
+footer .footer-alignment .fo-link-area .footer-link li a {
   text-decoration: none;
   color: #3DADF2;
   font-size: 14px;
   font-weight: 500;
 }
 
-footer .scroll-top {
+footer .footer-alignment .scroll-top {
   position: relative;
   text-align: center;
   padding: 50px 0;
 }
 
-footer .scroll-top .top-back {
+footer .footer-alignment .scroll-top .top-back {
   background: linear-gradient(135deg, #ABDCFF 0%, #0396FF 100%);
   width: 54px;
   height: 54px;
@@ -2090,13 +2236,13 @@ footer .scroll-top .top-back {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  left: 47%;
+  left: 48%;
   border-radius: 50%;
   top: 25px;
   cursor: pointer;
 }
 
-footer .scroll-top .top-back .top-btn {
+footer .footer-alignment .scroll-top .top-back .top-btn {
   position: relative;
   left: 36.5%;
   top: 5%;
@@ -2108,17 +2254,17 @@ footer .scroll-top .top-back .top-btn {
           transform: rotate(45deg);
 }
 
-footer .scroll-top .footer-border {
+footer .footer-alignment .scroll-top .footer-border {
   border-top: 0.5px solid #3DADF2;
   opacity: .7;
 }
 
-footer .fo-content {
+footer .footer-alignment .fo-content {
   text-align: center;
   color: #0A2465;
 }
 
-footer .fo-content .fa-heart {
+footer .footer-alignment .fo-content .fa-heart {
   color: #BC1717 !important;
 }
 

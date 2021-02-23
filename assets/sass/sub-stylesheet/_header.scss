@@ -5,6 +5,7 @@ header{
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
+        padding: 0 20px;
         .menu-logo{
             display: flex;
             align-items: center;
@@ -86,7 +87,8 @@ header{
                                 }
                                 .down-menu1{
                                     top: 30px;
-                                    left: 0;
+                                    left: -285px !important;
+                                    width: 656px;
                                     bottom: 20px;
                                     height: auto;
                                     transform: scaley(1);
@@ -94,14 +96,102 @@ header{
                                     box-shadow: -5px 54px 81px 2px transparent;
                                     transition: all 0.3s ease-in;
                                     color: white;
-                                    li{
-                                        height: 50px;
-                                        a{
-                                            box-shadow: -1px 113px 60px 2px transparent;
-                                            color: $theme-dark2;
-                                            color: white;
+                                    @include breakpoint (lg){
+                                        &::after{
+                                            content: '';
+                                            position: absolute;
+                                            height: 20px;
+                                            width: 20px;
+                                            background-color: white;
+                                            top: -7px;
+                                            left: 50%;
+                                            transform: rotate(45deg);
                                         }
-                                    } 
+                                    }
+                                    .drop-aling{
+                                        display: block;
+                                        @include breakpoint (lg){
+                                            display: flex;
+                                            ul.design-drop{
+                                                padding: 10px;
+                                                color: $theme-dark;
+                                                cursor: auto;
+                                                width: calc(656px / 3);
+                                                font-weight: 500;
+                                                li{
+                                                    min-height: 66px;
+                                                    padding: 5px ;
+                                                    font-weight: 300;
+                                                    line-height: 20px;
+                                                    font-size: 17px;
+                                                    &:hover{
+                                                        background-color: #E5E7ED;
+                                                        border-left: 3px solid $theme-dark;
+                                                    }
+                                                    a{
+                                                        line-height: 20px;
+                                                        font-weight: 500;
+                                                        span{
+                                                            font-size: 16px;
+                                                            font-weight: 300;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            ul.appliacation-drop{
+                                                padding: 10px;
+                                                color: $theme-dark;
+                                                cursor: auto;
+                                                width: calc(656px / 3);
+                                                font-weight: 500;
+                                                li{
+                                                    height: 130px;
+                                                    padding: 5px ;
+                                                    font-weight: 300;
+                                                    line-height: 20px;
+                                                    font-size: 17px;
+                                                    &:hover{
+                                                        background-color: #E5E7ED;
+                                                        border-left: 3px solid $theme-dark;
+                                                    }
+                                                    a{
+                                                        line-height: 20px;
+                                                        font-weight: 500;
+                                                        span{
+                                                            font-size: 16px;
+                                                            font-weight: 300;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            ul.groth-drop{
+                                                padding: 10px;
+                                                color: $theme-dark;
+                                                cursor: auto;
+                                                width: calc(656px / 3);
+                                                font-weight: 500;
+                                                li{
+                                                    min-height: 66px;
+                                                    padding: 5px ;
+                                                    font-weight: 300;
+                                                    line-height: 20px;
+                                                    font-size: 17px;
+                                                    &:hover{
+                                                        background-color: #E5E7ED;
+                                                        border-left: 3px solid $theme-dark;
+                                                    }
+                                                    a{
+                                                        line-height: 20px;
+                                                        font-weight: 500;
+                                                        span{
+                                                            font-size: 16px;
+                                                            font-weight: 300;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
                                 }
                              
                             }
@@ -160,11 +250,23 @@ header{
                             position: relative;
                             top: 0px;
                             height: 0px;
+                            width: 656px !important;
                             transform: scaley(0);
                             text-align: left;
                             transform-origin: top;
-                            transition: all 0.3 ease-in-out;
+                            transition: height 0.3 ease-in-out;
                             padding: 0px 0px;
+                            .drop-aling{
+                                display: block;
+                                @include breakpoint (lg){
+                                    display: flex;
+                                    ul{
+                                        padding: 10px;
+                                        margin: 0;
+                                        width: calc(400px / 3);
+                                    }
+                                }
+                            }
                             li{
                                 padding: 0px;
                                 list-style: none;
@@ -231,7 +333,7 @@ header{
                             cursor: pointer;
                             font-size: 17px;
                             display: flex;
-                            padding: 12px 10px;
+                            padding: 12px 20px;
                             position: relative;
                             color: $theme-dark;
                             list-style: none;
@@ -342,7 +444,7 @@ header{
                         }
                         .normal-list{
                             list-style: none;
-                            padding: 30px 15px;
+                            padding: 30px 20px;
                             a{
                                 color: $theme-dark2;
                                 text-decoration: none;
