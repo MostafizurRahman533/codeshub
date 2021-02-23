@@ -251,6 +251,7 @@ header{
                                     height: 100%;
                                     transition: all 0.3s ease-in-out;
                                     transform: scaley(1);
+                                    transform-origin: top;
                                     ul{
                                         color: $theme-light2;
                                         padding: 0;
@@ -379,11 +380,10 @@ header{
                             }
                         }
                         .down-menu2{
-                            width: 100px;
                             box-sizing: border-box;
                             position: relative;
                             height: 0px;
-                            width: 0 !important;
+                            width: 150px;
                             top: 0px;
                             transform: scaley(0);
                             transform-origin: top;
@@ -474,7 +474,6 @@ header{
                                             }
                                         } 
                                     }
-                                 
                                 }
                             }
                             &:nth-child(2){

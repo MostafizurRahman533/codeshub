@@ -603,6 +603,8 @@ header .menu-area .main-menu .menus .list-menu .drop-list:nth-child(2):hover .do
   transition: all 0.3s ease-in-out;
   -webkit-transform: scaley(1);
           transform: scaley(1);
+  -webkit-transform-origin: top;
+          transform-origin: top;
 }
 
 header .menu-area .main-menu .menus .list-menu .drop-list:nth-child(2):hover .down-menu2 ul {
@@ -765,12 +767,11 @@ header .menu-area .main-menu .menus .list-menu .drop-list .down-menu1 li a {
 }
 
 header .menu-area .main-menu .menus .list-menu .drop-list .down-menu2 {
-  width: 100px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
   height: 0px;
-  width: 0 !important;
+  width: 150px;
   top: 0px;
   -webkit-transform: scaley(0);
           transform: scaley(0);
