@@ -975,10 +975,13 @@ footer{
                 display: flex;
                 align-items: center;
                 position: absolute;
-                left: 48%;
+                left: 43%;
                 border-radius: 50%;
                 top: 25px;
                 cursor: pointer;
+                @include breakpoint (sm){
+                    left: 48%;
+                }
                 .top-btn{
                     position: relative;
                     left: 36.5%;

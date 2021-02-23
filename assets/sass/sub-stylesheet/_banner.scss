@@ -5,21 +5,37 @@
         min-height: 440px;
         h2{
             color: $theme-light2;
-            width: 50%;
-            margin-left: 100px;
+            width: 80%;
+            margin-left: 30px;
             margin-top: 50px;
             margin-bottom: 20px;
             font-size: 35px;
             font-weight: 700;
+            @include breakpoint (sm){
+                width: 70%;
+                margin-left: 50px;
+            }
+            @include breakpoint (lg){
+                margin-left: 100px;
+                width: 50%;
+            }
         }
         p{
-            width: 45%;
+            width: 80%;
             color: #A7A7A7;
-            margin: 0 0 50px 100px;
+            margin: 0 0 50px 30px;
             font-weight: 500;
+            @include breakpoint (sm){
+                width: 60%;
+                margin: 0 0 50px 50px;
+            }
+            @include breakpoint (lg){
+                width: 45%;
+                margin: 0 0 50px 100px;
+            }
         }
         a{
-            margin-left: 100px;
+            margin-left: 30px;
             text-decoration: none;
             background: linear-gradient(135deg, #ABDCFF 0%, #0396FF 100%);
             color: white;
@@ -29,6 +45,12 @@
             border-radius: 20px;
             transition: all 0.3s ease-in-out;
             box-shadow: 1px 24px 38px 5px rgba(0, 219, 248, 0.17);
+            @include breakpoint (sm){
+                margin-left: 50px;
+            }
+            @include breakpoint (lg){
+                margin-left: 100px;
+            }
             &:hover{
                 background: linear-gradient(135deg, $theme-middel 0%, $theme-light 100%);
                 transition: all 0.3 ease-in-out;
@@ -42,6 +64,7 @@
         }
     }
     .banner-right-area{
+        height: 500px;
         .backgroun-image{
             margin-top: 40px;
             position: relative;

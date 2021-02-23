@@ -5,7 +5,10 @@ header{
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
-        padding: 0 20px;
+        padding: 0 0px;
+        @include breakpoint (md){
+            padding: 0 20px;
+        }
         .menu-logo{
             display: flex;
             align-items: center;
@@ -84,18 +87,41 @@ header{
                                 margin: 8px 10px;
                                 transform: rotate(-135deg);
                                 transition: all 0.3s ease-in-out;
+                                
                                 }
                                 .down-menu1{
                                     top: 30px;
-                                    left: -285px !important;
-                                    width: 656px;
-                                    bottom: 20px;
-                                    height: auto;
+                                    left: 0px;
+                                    width: 200px !important;
+                                    height: 100%;
+                                    transition: all 0.3s ease-in-out;
                                     transform: scaley(1);
-                                    transform-origin: top;
-                                    box-shadow: -5px 54px 81px 2px transparent;
-                                    transition: all 0.3s ease-in;
-                                    color: white;
+                                    ul{
+                                        color: $theme-light2;
+                                        li{
+                                            height: 50px;
+                                            margin-left: 10px;
+                                            a{
+                                                color: white;
+                                                font-size: 16px;
+                                                span{
+                                                    display: none;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    @include breakpoint(lg){
+                                        top: 30px;
+                                        left: -285px !important;
+                                        width: 656px !important;
+                                        bottom: 20px;
+                                        height: auto;
+                                        transform: scaley(1);
+                                        transform-origin: top;
+                                        box-shadow: -5px 54px 81px 2px transparent;
+                                        transition: all 0.3s ease-in;
+                                        color: white; 
+                                    }
                                     @include breakpoint (lg){
                                         &::after{
                                             content: '';
@@ -119,11 +145,12 @@ header{
                                                 width: calc(656px / 3);
                                                 font-weight: 500;
                                                 li{
-                                                    min-height: 66px;
-                                                    padding: 5px ;
+                                                    min-height: 76px;
+                                                    padding: 3px;
                                                     font-weight: 300;
                                                     line-height: 20px;
                                                     font-size: 17px;
+                                                    color: $theme-dark;
                                                     &:hover{
                                                         background-color: #E5E7ED;
                                                         border-left: 3px solid $theme-dark;
@@ -131,9 +158,12 @@ header{
                                                     a{
                                                         line-height: 20px;
                                                         font-weight: 500;
+                                                        color: $theme-dark;
                                                         span{
-                                                            font-size: 16px;
+                                                            color: $theme-dark;
+                                                            font-size: 15px;
                                                             font-weight: 300;
+                                                            display: block;
                                                         }
                                                     }
                                                 }
@@ -157,9 +187,12 @@ header{
                                                     a{
                                                         line-height: 20px;
                                                         font-weight: 500;
+                                                        color: $theme-dark;
                                                         span{
-                                                            font-size: 16px;
+                                                            font-size: 15px;
                                                             font-weight: 300;
+                                                            display: block;
+
                                                         }
                                                     }
                                                 }
@@ -183,9 +216,11 @@ header{
                                                     a{
                                                         line-height: 20px;
                                                         font-weight: 500;
+                                                        color: $theme-dark;
                                                         span{
                                                             font-size: 16px;
                                                             font-weight: 300;
+                                                            display: block;
                                                         }
                                                     }
                                                 }
@@ -210,23 +245,87 @@ header{
                                 transition: all 0.3s ease-in-out;
                                 }
                                 .down-menu2{
-                                    transition: all 0.3s ease-in;
                                     top: 30px;
-                                    left: 0;
-                                    bottom: 20px;
-                                    height: auto;
+                                    left: 0px;
+                                    width: 150px !important;
+                                    height: 100%;
+                                    transition: all 0.3s ease-in-out;
                                     transform: scaley(1);
-                                    transform-origin: top;
-                                    box-shadow: -5px 54px 81px 2px transparent;
-                                    color: white;
-                                    li{
-                                        height: 50px;
-                                        a{
-                                            box-shadow: -1px 113px 60px 2px transparent;
-                                            color: $theme-dark2;
-                                            color: white;
+                                    ul{
+                                        color: $theme-light2;
+                                        padding: 0;
+                                        li{
+                                            height: 50px;
+                                            margin-left: 10px;
+                                            a{
+                                                color: white;
+                                                font-size: 16px;
+                                                span{
+                                                    display: none;
+                                                }
+                                            }
                                         }
-                                    } 
+                                    }
+                                    @include breakpoint(lg){
+                                        top: 30px;
+                                        left: -55px !important;
+                                        width: 232px !important;
+                                        bottom: 20px;
+                                        height: auto;
+                                        transform: scaley(1);
+                                        transform-origin: top;
+                                        box-shadow: -5px 54px 81px 2px transparent;
+                                        transition: all 0.3s ease-in;
+                                        color: white; 
+                                    }
+                                    @include breakpoint (lg){
+                                        &::after{
+                                            content: '';
+                                            position: absolute;
+                                            height: 20px;
+                                            width: 20px;
+                                            background-color: white;
+                                            top: -7px;
+                                            left: 50%;
+                                            transform: rotate(45deg);
+                                        }
+                                    }
+                                    .drop-aling{
+                                        display: block;
+                                        @include breakpoint (lg){
+                                            display: flex;
+                                            ul.design-drop{
+                                                padding: 12px 0;
+                                                color: $theme-dark;
+                                                cursor: auto;
+                                                font-weight: 500;
+                                                li{
+                                                    min-height: 76px;
+                                                    padding: 3px;
+                                                    font-weight: 300;
+                                                    line-height: 20px;
+                                                    font-size: 17px;
+                                                    color: $theme-dark;
+                                                    &:hover{
+                                                        background-color: #E5E7ED;
+                                                        border-left: 3px solid $theme-dark;
+                                                    }
+                                                    a{
+                                                        line-height: 20px;
+                                                        font-weight: 500;
+                                                        color: $theme-dark;
+                                                        span{
+                                                            color: $theme-dark;
+                                                            font-size: 15px;
+                                                            font-weight: 300;
+                                                            display: block;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            
+                                        }
+                                    }
                                 }
                              
                             }
@@ -240,8 +339,12 @@ header{
                             border-bottom: 1.5px solid white;
                             border-right: 1.5px solid white;
                             margin: 5px 10px;
+                            padding: 5px;
                             transform: rotate(45deg);
                             transition: all 0.3s ease-in-out;
+                            @include breakpoint (lg){
+                                padding: 0x;
+                            }
                         }
                         .down-menu1{
                             width: auto;
@@ -254,7 +357,7 @@ header{
                             transform: scaley(0);
                             text-align: left;
                             transform-origin: top;
-                            transition: height 0.3 ease-in-out;
+                            transition: all 0.3 ease-in-out;
                             padding: 0px 0px;
                             .drop-aling{
                                 display: block;
@@ -276,16 +379,21 @@ header{
                             }
                         }
                         .down-menu2{
-                            width: auto;
+                            width: 100px;
                             box-sizing: border-box;
                             position: relative;
                             height: 0px;
+                            width: 0 !important;
                             top: 0px;
                             transform: scaley(0);
                             transform-origin: top;
                             transition: all 0.3 ease-in-out;
                             padding: 5px 20px;
-                            li{list-style: none;
+                            @include breakpoint (lg){
+                                width: 232px !important;
+                            }
+                            li{
+                                list-style: none;
                                 a{
                                     text-decoration: none;
                                 }
@@ -356,12 +464,11 @@ header{
                                         bottom: auto;
                                         transform: scaley(1);
                                         transition: all 0.3s ease-in;
-                                        box-shadow: -5px 54px 81px 2px rgba(232,229,232,1);
+                                        box-shadow: -5px 54px 81px 2px rgba(61, 173, 242, 0.07);
                                         li{
                                             height: 50px;
                                             list-style: none;
                                             a{
-                                                box-shadow: -1px 113px 60px 2px rgba(232,229,232,1);
                                                 color: $theme-dark2;
                                                 text-decoration: none;
                                             }
@@ -412,8 +519,12 @@ header{
                                 border-bottom: 1.5px solid $theme-dark;
                                 border-right: 1.5px solid $theme-dark;
                                 margin: 5px 10px;
+                                padding: 5px;
                                 transform: rotate(45deg);
                                 transition: all 0.3s ease-in-out;
+                                @include breakpoint(lg){
+                                    padding: 0px;
+                                }
                             }
                             .down-menu1{
                                 width: 150px;
