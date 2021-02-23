@@ -45,33 +45,96 @@
         .backgroun-image{
             margin-top: 40px;
             position: relative;
-            .animation-image{
+            .round-animation-box{
                 position: absolute;
-                top: 180px;
-                right: 243px;
-                .giear-icon-1{
-                    animation: animate-1 10s linear 0s infinite;
+                top: 0;
+                left: 20%;
+                .round-image-box{
+                    position: relative;
+                    .round-image{
+                        position: relative;
+                    }
+                    .animation-image{
+                        position: absolute;
+                        top: 183px;
+                        right: 126px;
+                        .giear-icon-1{
+                            animation: animate-1 10s linear 0s infinite;
+                        }
+                    }
+                    .animation-image2{
+                        position: absolute;
+                        top: 19px;
+                        left: 39px;
+                         .giear-icon-2{
+                            animation: animate-1 15s linear 0s infinite reverse;
+                        }
+                    }
+                    .animation-image3{
+                        position: absolute;
+                        top: 61px;
+                        right: 126px;
+                        .data-animation{
+                            position: relative;
+                            .data-icon-1{
+                                position: absolute;
+                                left: 44px;
+                                top: -27px;
+                                animation: data-animate-1 1s linear 1.2s infinite;
+                            }
+                            .data-icon-2{
+                                position: absolute;
+                                left: 44px;
+                                top: -19px;
+                                animation: data-animate-2 1s linear 1.2s infinite;
+                            }
+                            .data-icon-3{
+                                position: absolute;
+                                left: 41px;
+                                top: -9px;
+                                animation: data-animate-3 1s linear 1.2s infinite;
+                            }
+                        }
+                        
+                    }
+                    .animation-image4{
+                        position: absolute;
+                        bottom: 77px;
+                        left: -23px;
+                        .data-animation{
+                            position: relative;
+                            .data-icon-1{
+                                position: absolute;
+                                left: 39px;
+                                bottom: 4px;
+                                animation: data-animate-4 1s linear 1.2s infinite;
+                            }
+                            .data-icon-2{
+                                position: absolute;
+                                left: 42px;
+                                bottom: -9px;
+                                animation: data-animate-5 1s linear 1.2s infinite;
+                            }
+                            .data-icon-3{
+                                position: absolute;
+                                left: 42px;
+                                bottom: -17px;
+                                animation: data-animate-6 1s linear 1.2s infinite;
+                            }
+                        }
+                    }
+                    .man-image-box{
+                        position: absolute;
+                        top: 18px;
+                        left: -107px;
+                        .man-image{
+                            position: relative;
+                        }
+                    }
                 }
-            }
-            .animation-image2{
-                position: absolute;
-                top: 30px;
-                left: 170px;
-                 .giear-icon-2{
-                    animation: animate-1 15s linear 0s infinite reverse;
-                }
-            }
-            .animation-image3{
-                position: absolute;
-                top: 61px;
-                right: 243px;
                 
             }
-            .animation-image4{
-                position: absolute;
-                bottom: 77px;
-                left: 122px;
-            }
+            
         }
     }
 }

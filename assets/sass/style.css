@@ -159,6 +159,138 @@ body.overflow {
   }
 }
 
+@-webkit-keyframes data-animate-1 {
+  0% {
+    left: 44px;
+    top: -38px;
+  }
+  100% {
+    left: 44px;
+    top: -27px;
+  }
+}
+
+@keyframes data-animate-1 {
+  0% {
+    left: 44px;
+    top: -38px;
+  }
+  100% {
+    left: 44px;
+    top: -27px;
+  }
+}
+
+@-webkit-keyframes data-animate-2 {
+  0% {
+    left: 44px;
+    top: -25px;
+  }
+  100% {
+    left: 44px;
+    top: -19px;
+  }
+}
+
+@keyframes data-animate-2 {
+  0% {
+    left: 44px;
+    top: -25px;
+  }
+  100% {
+    left: 44px;
+    top: -19px;
+  }
+}
+
+@-webkit-keyframes data-animate-3 {
+  0% {
+    left: 41px;
+    top: -12px;
+  }
+  100% {
+    left: 41px;
+    top: -9px;
+  }
+}
+
+@keyframes data-animate-3 {
+  0% {
+    left: 41px;
+    top: -12px;
+  }
+  100% {
+    left: 41px;
+    top: -9px;
+  }
+}
+
+@-webkit-keyframes data-animate-4 {
+  0% {
+    left: 39px;
+    bottom: 4px;
+  }
+  100% {
+    left: 39px;
+    bottom: 8px;
+  }
+}
+
+@keyframes data-animate-4 {
+  0% {
+    left: 39px;
+    bottom: 4px;
+  }
+  100% {
+    left: 39px;
+    bottom: 8px;
+  }
+}
+
+@-webkit-keyframes data-animate-5 {
+  0% {
+    left: 42px;
+    bottom: -11px;
+  }
+  100% {
+    left: 42px;
+    bottom: -1px;
+  }
+}
+
+@keyframes data-animate-5 {
+  0% {
+    left: 42px;
+    bottom: -11px;
+  }
+  100% {
+    left: 42px;
+    bottom: -1px;
+  }
+}
+
+@-webkit-keyframes data-animate-6 {
+  0% {
+    left: 42px;
+    bottom: -19px;
+  }
+  100% {
+    left: 42px;
+    bottom: -6px;
+  }
+}
+
+@keyframes data-animate-6 {
+  0% {
+    left: 42px;
+    bottom: -19px;
+  }
+  100% {
+    left: 42px;
+    bottom: -6px;
+  }
+}
+
 header .menu-area {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -683,37 +815,117 @@ header .menu-area .main-menu .menus .list-menu .normal-list:nth-last-child(1) a:
   position: relative;
 }
 
-.banner-area .banner-right-area .backgroun-image .animation-image {
+.banner-area .banner-right-area .backgroun-image .round-animation-box {
   position: absolute;
-  top: 180px;
-  right: 243px;
+  top: 0;
+  left: 20%;
 }
 
-.banner-area .banner-right-area .backgroun-image .animation-image .giear-icon-1 {
+.banner-area .banner-right-area .backgroun-image .round-animation-box .round-image-box {
+  position: relative;
+}
+
+.banner-area .banner-right-area .backgroun-image .round-animation-box .round-image-box .round-image {
+  position: relative;
+}
+
+.banner-area .banner-right-area .backgroun-image .round-animation-box .round-image-box .animation-image {
+  position: absolute;
+  top: 183px;
+  right: 126px;
+}
+
+.banner-area .banner-right-area .backgroun-image .round-animation-box .round-image-box .animation-image .giear-icon-1 {
   -webkit-animation: animate-1 10s linear 0s infinite;
           animation: animate-1 10s linear 0s infinite;
 }
 
-.banner-area .banner-right-area .backgroun-image .animation-image2 {
+.banner-area .banner-right-area .backgroun-image .round-animation-box .round-image-box .animation-image2 {
   position: absolute;
-  top: 30px;
-  left: 170px;
+  top: 19px;
+  left: 39px;
 }
 
-.banner-area .banner-right-area .backgroun-image .animation-image2 .giear-icon-2 {
+.banner-area .banner-right-area .backgroun-image .round-animation-box .round-image-box .animation-image2 .giear-icon-2 {
   animation: animate-1 15s linear 0s infinite reverse;
 }
 
-.banner-area .banner-right-area .backgroun-image .animation-image3 {
+.banner-area .banner-right-area .backgroun-image .round-animation-box .round-image-box .animation-image3 {
   position: absolute;
   top: 61px;
-  right: 243px;
+  right: 126px;
 }
 
-.banner-area .banner-right-area .backgroun-image .animation-image4 {
+.banner-area .banner-right-area .backgroun-image .round-animation-box .round-image-box .animation-image3 .data-animation {
+  position: relative;
+}
+
+.banner-area .banner-right-area .backgroun-image .round-animation-box .round-image-box .animation-image3 .data-animation .data-icon-1 {
+  position: absolute;
+  left: 44px;
+  top: -27px;
+  -webkit-animation: data-animate-1 1s linear 1.2s infinite;
+          animation: data-animate-1 1s linear 1.2s infinite;
+}
+
+.banner-area .banner-right-area .backgroun-image .round-animation-box .round-image-box .animation-image3 .data-animation .data-icon-2 {
+  position: absolute;
+  left: 44px;
+  top: -19px;
+  -webkit-animation: data-animate-2 1s linear 1.2s infinite;
+          animation: data-animate-2 1s linear 1.2s infinite;
+}
+
+.banner-area .banner-right-area .backgroun-image .round-animation-box .round-image-box .animation-image3 .data-animation .data-icon-3 {
+  position: absolute;
+  left: 41px;
+  top: -9px;
+  -webkit-animation: data-animate-3 1s linear 1.2s infinite;
+          animation: data-animate-3 1s linear 1.2s infinite;
+}
+
+.banner-area .banner-right-area .backgroun-image .round-animation-box .round-image-box .animation-image4 {
   position: absolute;
   bottom: 77px;
-  left: 122px;
+  left: -23px;
+}
+
+.banner-area .banner-right-area .backgroun-image .round-animation-box .round-image-box .animation-image4 .data-animation {
+  position: relative;
+}
+
+.banner-area .banner-right-area .backgroun-image .round-animation-box .round-image-box .animation-image4 .data-animation .data-icon-1 {
+  position: absolute;
+  left: 39px;
+  bottom: 4px;
+  -webkit-animation: data-animate-4 1s linear 1.2s infinite;
+          animation: data-animate-4 1s linear 1.2s infinite;
+}
+
+.banner-area .banner-right-area .backgroun-image .round-animation-box .round-image-box .animation-image4 .data-animation .data-icon-2 {
+  position: absolute;
+  left: 42px;
+  bottom: -9px;
+  -webkit-animation: data-animate-5 1s linear 1.2s infinite;
+          animation: data-animate-5 1s linear 1.2s infinite;
+}
+
+.banner-area .banner-right-area .backgroun-image .round-animation-box .round-image-box .animation-image4 .data-animation .data-icon-3 {
+  position: absolute;
+  left: 42px;
+  bottom: -17px;
+  -webkit-animation: data-animate-6 1s linear 1.2s infinite;
+          animation: data-animate-6 1s linear 1.2s infinite;
+}
+
+.banner-area .banner-right-area .backgroun-image .round-animation-box .round-image-box .man-image-box {
+  position: absolute;
+  top: 18px;
+  left: -107px;
+}
+
+.banner-area .banner-right-area .backgroun-image .round-animation-box .round-image-box .man-image-box .man-image {
+  position: relative;
 }
 
 .focused-area {
